@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="Projects">
-        <Link onMouseOver={() => setActiveProject(
+        <Link onMouseOut={() => setActiveProject()} onMouseOver={() => setActiveProject(
             <div>
               <h2>IRL Betting App (COMING SOON!)</h2>
               <p>A full-stack mobile application where users will be able to exchange "real-life" wagers with eachother. </p>
@@ -25,7 +25,7 @@ function App() {
         )}>
           <FaDice size={`5em`} color={'tomato'}></FaDice>
         </Link>
-        <Link link={`https://meal-planner-client.onrender.com/`} onMouseOver={() => setActiveProject(
+        <Link link={`https://meal-planner-client.onrender.com/`}  onMouseOut={() => setActiveProject()} onMouseOver={() => setActiveProject(
             <div>
               <h2>Meal Planner</h2>
               <p>A full-stack web application that generates meals for a user based on caloric and macronutrient intake.</p>
@@ -37,7 +37,7 @@ function App() {
         )}>
           <FaHamburger size={`5em`} color={'steelblue'}/>
         </Link>
-        <Link link={`https://knguye.github.io/notepad-app/`} onMouseOver={() => setActiveProject(
+        <Link link={`https://knguye.github.io/notepad-app/`} onMouseOut={() => setActiveProject()} onMouseOver={() => setActiveProject(
             <div>
               <h2>Local Notepad App</h2>
               <p>A localStorage based application that allows the user to enter in quick, editable sticky notes</p>
@@ -49,7 +49,7 @@ function App() {
         )}>
           <FaStickyNote size={`5em`} color={'khaki'}></FaStickyNote>
         </Link>
-        <Link onMouseOver={() => setActiveProject(
+        <Link onMouseOut={() => setActiveProject()} onMouseOver={() => setActiveProject(
             <div>
               <h2>Greenhouse Robot Project</h2>
               <p>For my Western University Capstone project - helped developed a prototype greenhouse robot with autonomous movement</p>
@@ -74,7 +74,7 @@ function App() {
 
 function Link(props) {
   return (
-    <a href={props.link} class={`hover-link`} onMouseOver={props.onMouseOver}>
+    <a href={props.link} class={`hover-link`} onMouseOver={props.onMouseOver} onMouseOut={props.onMouseOut}>
       <div style={{
         display: 'flex',
         flexDirection: 'column',

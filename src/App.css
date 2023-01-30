@@ -26,6 +26,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .Projects > * {
@@ -45,6 +46,7 @@ a {
   background-color: #282c34;
   color: white;
   width:  inherit;
+  height: 20vh;
 }
 
 .project-desc {
