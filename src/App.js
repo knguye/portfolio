@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
-import { FaDice, FaHamburger, FaPhone, FaRobot, FaStickyNote } from 'react-icons/fa'
+import { FaDesktop, FaDice, FaHamburger, FaPhone, FaRobot, FaStickyNote } from 'react-icons/fa'
 
 function App() {
   const [activeProject, setActiveProject] = useState();
@@ -35,7 +35,7 @@ function App() {
               <p><b>Libraries/APIs: </b> <a href={`https://platform.fatsecret.com/api/`}>Fatsecret REST API</a> </p>
             </div>
         )}>
-          <FaHamburger size={`5em`} color={'steelblue'}/>
+          <FaHamburger size={`5em`} color={'lavender'}/>
         </Link>
         <Link link={`https://knguye.github.io/notepad-app/`} onMouseOut={() => setActiveProject()} onMouseOver={() => setActiveProject(
             <div>
@@ -48,6 +48,22 @@ function App() {
             </div>
         )}>
           <FaStickyNote size={`5em`} color={'khaki'}></FaStickyNote>
+        </Link>
+        <Link link={`https://kevscodingacademy.com`} onMouseOut={() => setActiveProject()} onMouseOver={() => setActiveProject(
+            <div>
+              <h2>Kev's Coding Academy</h2>
+              <p>My business, where I educate and assist secondary and post-secondary students with their programming courses!</p>
+              <h3>What I've done</h3>
+              <ul>
+                <li>Helped over 100 students with their school assignments as well as general understanding of multiple languages</li>
+                <li>Taught multiple programming languages/libraries (Java, C, C++, Python, Javascript, even Powershell and MATLAB!)</li>
+                <li>Achieved over 20 5-star reviews on Google</li>
+                <li>Made my own website with HTML and CSS</li>
+                <li>Organized group lessons for multiple children at a time, teaching web development</li>
+              </ul>
+            </div>
+        )}>
+          <FaDesktop size={`5em`} color={'steelblue'}></FaDesktop>
         </Link>
         <Link onMouseOut={() => setActiveProject()} onMouseOver={() => setActiveProject(
             <div>
